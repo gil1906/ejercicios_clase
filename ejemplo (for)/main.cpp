@@ -6,7 +6,7 @@ int main()
 {
     //declaracion de variables
     float R1=0.0, R2=0.0, Rp=0.0, R3=0.0;
-    int Nr=0, salir=1;
+    int Nr=0, salir=0;
     //mensajes para el usuario
     while (true){
     if (Nr<=1){
@@ -33,8 +33,9 @@ int main()
     cout << "resistencia total " << Rp;
     cout << "ingrese 1 para volver a comenzar o cero ('0') para salir " << endl;
     cin >> salir;
-    if (salir ==0)
+    if (salir ==1){
             break;
+            }
         }
     }
     return 0;
